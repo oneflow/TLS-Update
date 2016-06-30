@@ -1,12 +1,15 @@
 .Net
 ====
 
-Must be using 4.0 or above. In 4.0 or 4.5 if not using the sdk, you need to manualy set the protocol. 
-ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;
+You must be using 4.0 or above. 
 
-if using the sdk please install the newest version. 
+if using the sdk please install the latest version. 
 download the latest sdk. 
 https://github.com/Oneflow/oneflow-api-sdk-dotnet
+
+In 4.0 or 4.5 if not using the sdk, you need to manualy set the protocol.
+
+```ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;```
 
 PHP
 ===
@@ -54,7 +57,7 @@ Node.js
 Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
 Can check to see if supported:
-'''$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode)''' });"
+'''$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode) });"'''
 
 You should see a 200 which indicates yes.
 
