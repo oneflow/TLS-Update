@@ -56,7 +56,7 @@ Node.js
 Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
 Can check to see if supported:
-'''$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode) });"'''
+```$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode) });"```
 
 You should see a 200 which indicates yes.
 
