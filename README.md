@@ -76,9 +76,9 @@ Python uses the system supplied OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or high
 Java
 ====
 
-version 5: Not supported, you will need to upgrade
-version 6 + 7: TLSv1.2 must be enable explicitly, can set via: http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/SSLContext.html
-version 8: TLSv1.2 is the default 
+- version 5: Not supported, you will need to upgrade
+- version 6 + 7: TLSv1.2 must be enable explicitly, can set via:  http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/SSLContext.html
+- version 8: TLSv1.2 is the default 
 
 
 
