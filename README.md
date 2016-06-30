@@ -4,7 +4,6 @@
 You must be using 4.0 or above. 
 
 if using the sdk please install the latest version. 
-download the latest sdk. 
 https://github.com/Oneflow/oneflow-api-sdk-dotnet
 
 In 4.0 or 4.5 if not using the sdk, you need to manualy set the protocol.
