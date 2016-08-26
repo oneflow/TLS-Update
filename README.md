@@ -3,8 +3,8 @@
 
 You must be using 4.0 or above. 
 
-if using the sdk please install the latest version. 
-https://github.com/Oneflow/oneflow-api-sdk-dotnet
+if using the sdk please get the latest version from nuget. 
+https://www.nuget.org/packages/OneFlowSDK/
 
 In 4.0 or 4.5 if not using the sdk, you need to manualy set the protocol.
 
