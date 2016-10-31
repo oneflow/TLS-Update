@@ -15,7 +15,7 @@ PHP
 
 You need to ensure OpenSSL version of at least 1.0.1 is installed.
 
-if using the sdk update to the latest verison. 
+if using the sdk update to the latest version. 
 https://github.com/Oneflow/oneflow-sdk-php
 
 You can check if PHP will work with the following script:
