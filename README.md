@@ -3,12 +3,14 @@
 
 You must be using 4.0 or above. 
 
-if using the sdk please get the latest version from nuget. 
+If you're using the SDK, please get the latest version from nuget:
 https://www.nuget.org/packages/OneFlowSDK/
 
 In 4.0 or 4.5 if not using the sdk, you need to manualy set the protocol.
 
-```ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;```
+```csharp
+ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+```
 
 PHP
 ===
@@ -20,7 +22,7 @@ https://github.com/Oneflow/oneflow-sdk-php
 
 You can check if PHP will work with the following script:
 
-```
+```php
 <?php
 
 echo "\n";
@@ -48,6 +50,7 @@ $json = json_decode($response);
 echo "You are using TLS version: " . $json->tls_version . "\n";
 echo "\n";
 ```
+
 You should see TLS 1.2 and OpenSSL version of at least 1.0.1
 
 Node.js
@@ -55,8 +58,10 @@ Node.js
 
 Node uses OpenSSL. TLSv1.2 requires OpenSSL 1.0.1c or higher.
 
-Can check to see if supported:
-```$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode) });"```
+You can check to see if TLS1.2 is supported in your version of node by running the following:
+```bash
+$ node -e "var https = require('https'); https.get('https://www.howsmyssl.com/a/check', function(res){ console.log(res.statusCode) });"
+```
 
 You should see a 200 which indicates yes.
 
